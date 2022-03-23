@@ -1,0 +1,11 @@
+/target/
+/runtime/
+/config/ 
+/autodeploy/
+/lib/ 
+/META-INF/ 
+/docroot/
+*.pid
+settings.xml
+nb-configuration.xml
+.DS_Store
