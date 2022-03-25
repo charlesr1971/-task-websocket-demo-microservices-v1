@@ -24,6 +24,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import javax.ws.rs.QueryParam;
 
 /**
  *
@@ -88,8 +89,9 @@ public class TaskController {
     @Consumes({MediaType.APPLICATION_JSON})
     @Produces({MediaType.APPLICATION_JSON})
     @Path("")
-    public Response getTasks() {
+    public Response getTasks(@QueryParam("CJSCPPUID") String  CJSCPPUID) {
 
+    	System.out.println("Got, "+CJSCPPUID);
         Logger.getLogger(TaskController.class.getName()).log(Level.INFO, null, "GET tasks");
 
         List<CreateTaskResponse> response = service.getTasks();
