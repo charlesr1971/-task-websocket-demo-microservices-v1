@@ -19,7 +19,7 @@ public class ApiFilter implements ContainerResponseFilter, ContainerRequestFilte
         response.getHeaders().putSingle("Access-Control-Allow-Origin", "*");
         response.getHeaders().putSingle("Access-Control-Allow-Credentials", "true");
         response.getHeaders().putSingle("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, DELETE");
-        response.getHeaders().putSingle("Access-Control-Allow-Headers", "Content-type, X-Requested-With");
+        response.getHeaders().putSingle("Access-Control-Allow-Headers", "Content-type, X-Requested-With, CJSCPPUID");
     }
 
     @Override
